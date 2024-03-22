@@ -2,22 +2,22 @@
 
 [ext_resource type="Script" path="res://player.gd" id="1_4q1n4"]
 [ext_resource type="Texture2D" uid="uid://cd8ls7b3uwg25" path="res://Tech Dungeon Roguelite - Asset Pack (DEMO)/Players/No Outlines/players blue x1.png" id="1_uftsh"]
-[ext_resource type="Texture2D" uid="uid://dldthwingklme" path="res://players blue x1.png" id="3_v8uq1"]
+[ext_resource type="Texture2D" uid="uid://dldthwingklme" path="res://players blue x1.png" id="2_2j6ml"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_mp4lt"]
-atlas = ExtResource("3_v8uq1")
+atlas = ExtResource("2_2j6ml")
 region = Rect2(96, 288, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_78s2r"]
-atlas = ExtResource("3_v8uq1")
+atlas = ExtResource("2_2j6ml")
 region = Rect2(128, 288, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0h4fx"]
-atlas = ExtResource("3_v8uq1")
+atlas = ExtResource("2_2j6ml")
 region = Rect2(160, 288, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_bmsu0"]
-atlas = ExtResource("3_v8uq1")
+atlas = ExtResource("2_2j6ml")
 region = Rect2(224, 224, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_xrtm5"]
@@ -57,23 +57,23 @@ atlas = ExtResource("1_uftsh")
 region = Rect2(96, 320, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_hkhas"]
-atlas = ExtResource("3_v8uq1")
+atlas = ExtResource("2_2j6ml")
 region = Rect2(128, 320, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_gssbw"]
-atlas = ExtResource("3_v8uq1")
+atlas = ExtResource("2_2j6ml")
 region = Rect2(160, 320, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_hlvqr"]
-atlas = ExtResource("3_v8uq1")
+atlas = ExtResource("2_2j6ml")
 region = Rect2(192, 320, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_5j31s"]
-atlas = ExtResource("3_v8uq1")
+atlas = ExtResource("2_2j6ml")
 region = Rect2(224, 320, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_e7dx2"]
-atlas = ExtResource("3_v8uq1")
+atlas = ExtResource("2_2j6ml")
 region = Rect2(224, 224, 32, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_f26lg"]
@@ -162,7 +162,7 @@ texture_filter = 3
 sprite_frames = SubResource("SpriteFrames_f26lg")
 animation = &"idle_left"
 autoplay = "idle_right"
-frame_progress = 0.636415
+frame_progress = 0.836221
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 polygon = PackedVector2Array(0, -1, 0, 0, -6, 0, -6, 1, -7, 1, -7, 8, -6, 8, -6, 9, -5, 9, -5, 10, -4, 10, -4, 14, 4, 14, 4, 13, 5, 13, 5, 11, 8, 11, 8, 10, 11, 10, 11, 5, 7, 5, 7, 1, 6, 1, 6, 0, 4, 0, 4, -1)

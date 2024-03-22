@@ -1,4 +1,4 @@
-extends AnimatedSprite2D
+class_name PlayerBody extends AnimatedSprite2D
 
 @export var speed = 100
 

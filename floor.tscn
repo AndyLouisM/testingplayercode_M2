@@ -1,14 +1,17 @@
-[gd_scene load_steps=4 format=3 uid="uid://cw4ln85tw8qjs"]
+[gd_scene load_steps=6 format=3 uid="uid://cw4ln85tw8qjs"]
 
 [ext_resource type="PackedScene" uid="uid://tas2bojqxb7t" path="res://player.tscn" id="1_72nja"]
+[ext_resource type="Script" path="res://floor.gd" id="1_w1hhc"]
 [ext_resource type="PackedScene" uid="uid://ci2wylrmly0ip" path="res://player_cursor.tscn" id="2_0gb1b"]
+[ext_resource type="PackedScene" uid="uid://b8l2i4rna2s3o" path="res://bullet.tscn" id="4_e40j1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_b3lm4"]
 size = Vector2(1152, 84)
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_w1hhc")
 
-[node name="ColorRect" type="ColorRect" parent="."]
+[node name="Floor" type="ColorRect" parent="."]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -20,13 +23,16 @@ grow_vertical = 2
 size_flags_horizontal = 2
 color = Color(0.662745, 0.470588, 0.372549, 1)
 
-[node name="StaticBody2D" type="StaticBody2D" parent="ColorRect"]
+[node name="StaticBody2D" type="StaticBody2D" parent="Floor"]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ColorRect/StaticBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor/StaticBody2D"]
 position = Vector2(576, 42)
 shape = SubResource("RectangleShape2D_b3lm4")
 
-[node name="CharacterBody2D" parent="." instance=ExtResource("1_72nja")]
+[node name="Player" parent="." instance=ExtResource("1_72nja")]
 position = Vector2(64, 518)
+scale = Vector2(3.09008, 3.02915)
 
 [node name="Control" parent="." instance=ExtResource("2_0gb1b")]
+
+[node name="Bullet" parent="." instance=ExtResource("4_e40j1")]
