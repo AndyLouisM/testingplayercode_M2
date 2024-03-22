@@ -22,7 +22,7 @@ func _process(delta):
 	elif (mouse_location.x > player_location.x):
 		player_animation_2D.play("idle_right")
 	
-	player_animation_2D.connect("shooting", the_shooting_signal(), 0)
+	#player_animation_2D.connect("shooting", the_shooting_signal(), 0)
 	pass
 
 func the_shooting_signal():
